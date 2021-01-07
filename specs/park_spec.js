@@ -36,8 +36,13 @@ describe('Park', function() {
     const actual = park.collectionOfDinosaur.length;
     assert.strictEqual(actual, 5);
   });
-
-  it('should be able to add a dinosaur to its collection');
+  
+  it('should be able to add a dinosaur to its collection', function() {
+    park.addDinosaur(triceratops);
+    const actual = park.collectionOfDinosaur.length;
+    assert.strictEqual(actual, 1);
+  });
+    
 
   it('should be able to remove a dinosaur from its collection');
 
